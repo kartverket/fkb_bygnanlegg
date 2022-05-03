@@ -1,5 +1,5 @@
 // Start of UML-model
-=== Pakke: «ApplicationSchema» FKB-BygnAnlegg-5.0
+=== Pakke: «ApplicationSchema» FKB-BygnAnlegg-5.0.1
 *Definisjon:* Datamodell for produktspesifikasjonen FKB-BygnAnelgg. FKB-BygnAnlegg beskriver bygningsmessige anlegg som ikke er knyttet til bygninger eller veger. Dette inkluderer objekter som murer, gjerder, taubaner, kaier, moloer, tanker etc.
  
 [discrete]
@@ -34,7 +34,7 @@
 |http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-BygnAnlegg/5.0
  
 |version
-|5.0
+|5.0.1
  
 |xmlns
 |app
@@ -3005,7 +3005,7 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-BygnAnlegg/5.0/fi
 |[1..1]
  
 |Type: 
-|http://skjema.geonorge.no/SOSI/basistype/GM_Surface[GM_Surface]
+|http://skjema.geonorge.no/SOSI/basistype/GM_Curve[GM_Curve]
 |===
 [cols="20,80"]
 |===

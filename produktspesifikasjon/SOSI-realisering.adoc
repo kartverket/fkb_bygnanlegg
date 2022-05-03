@@ -654,7 +654,7 @@
 |eksternpeker
 |URI
 |..EKSTERNPEKER
-|[1..1]
+|[0..1]
  
 |===
  
@@ -2981,8 +2981,8 @@
 |[0..1]
  
 |senterlinje
-|GM_Surface
-|.FLATE
+|GM_Curve
+|.KURVE
 |[1..1]
  
 |taubanetype
