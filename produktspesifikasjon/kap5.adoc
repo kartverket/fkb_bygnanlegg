@@ -25,7 +25,7 @@
 |FKB-BygnAnlegg
  
 |SOSI_modellstatus
-|gyldig
+|erstattet
  
 |SOSI_versjon
 |5.0
