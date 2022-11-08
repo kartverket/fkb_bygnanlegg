@@ -21,9 +21,9 @@ ifdef::backend-pdf[:toc: macro]
 :fkbGenerellDel-url: https://sosi.geonorge.no/Standarder/FKB_generell_del/5.0
 :title-logo-image: image:../felles_reginst/figurer/geovekst.jpg[bottom=90%, align=center, pdfwidth=1.5in]
 :fkbdatasett: {datasett} {versjon}
-:skjema-url: {skjemabase-url}{datasett}/{versjon}
+:skjema-url: {skjemabase-url}{datasett}/{prodspek-versjon}
 :prodspek-url: {prodspekbase-url}{datasett}
-:uml-url: {umlbase-url}{datasett}/{versjon}
+:uml-url: {umlbase-url}{datasett}/{prodspek-versjon}
 :reginstr-url: {reginstrbase-url}{datasett}/{versjon}/{reginstr-type}_{underversjon}
 :reginstr-url-ny: {reginstrbase-url}{datasett}/{versjon}/{reginstr-type}_{erstattet-av}
 :reginstr-url-erstatter: {reginstrbase-url}{datasett}/{versjon}/{reginstr-type}_{erstatter}
