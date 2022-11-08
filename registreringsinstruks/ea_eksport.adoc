@@ -820,7 +820,11 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-BygnAnlegg/5.0/fi
  
 [discrete]
 ==== Tilleggsinformasjon for fotogrammetrisk registrering
-Registreres som punktobjekter ved fotogrammetrisk registrering dersom ikke annet er avtalt.
+Objekttypen er opsjonell og dersom det bestilles datafangst av avfallsbeholdere anbefales det at det avtales n&#230;rmere rammer for dette i det enkelte prosjekt.
+
+Registreres som punktobjekter ved fotogrammetrisk registrering dersom ikke annet er avtalt. 
+
+Det presiseres at mobile avfallsbeholdere/s&#248;ppelkasser ikke skal registreres. 
  
  
 [discrete]
@@ -1641,13 +1645,9 @@ Tank registreres med flategeometri ved fotogrammetrisk registrering.
 
 Brukes for &#229; beskrive omriss av lukkede kar for oppbevaring av gass eller v&#230;ske n&#229;r tanken ikke er registrert som "Bygning". Inkluderer ogs&#229; vannt&#229;rn og lagringsrom for f&#244;r og korn (tidligere objekttype Silo).
 
-Dersom tanken er rund, skal det registreres eller genereres tilstrekkelig tett med punkter slik at tanken synes jevnt rund n&#229;r 
-den plottes. Tanken skal alltid lukkes. Det er lov &#229; generere ett eller 
-flere punkter for &#229; lukke tanken.
+Dersom tanken er rund, skal det registreres eller genereres tilstrekkelig tett med punkter slik at tanken synes jevnt rund n&#229;r den plottes. Tanken skal alltid lukkes. Det er lov &#229; generere ett eller flere punkter for &#229; lukke tanken.
 
-N&#229;r det er flere tanker tett inntil hverandre skal de registreres som et
-sammenhengende polygon, dersom det samlede arealet overstiger 
-minstem&#229;l.
+Hovedregelen er at tanker st&#248;rre enn minstem&#229;l registreres som separate objekter pr. tank. N&#229;r det er flere tanker (som hver for seg er mindre enn minstem&#229;l) som st&#229;r tett inntil hverandre skal de registreres som et sammenhengende polygon (ett Tank-objekt) dersom det samlede arealet overstiger minstem&#229;l.
  
  
 '''
@@ -4480,8 +4480,8 @@ Merknad: Taubanen registreres helt til forankringspunkt i bakken/bygning etc.
 |[0..1]
  
 |senterlinje
-|GM_Surface
-|.FLATE
+|GM_Curve
+|.KURVE
 |[1..1]
  
 |taubanetype
