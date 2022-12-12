@@ -1,5 +1,5 @@
 // Start of UML-model
-=== Pakke: «ApplicationSchema» FKB-BygnAnlegg-5.0.1
+=== Pakke: «ApplicationSchema» FKB-BygnAnlegg-5.0.2
 *Definisjon:* Datamodell for produktspesifikasjonen FKB-BygnAnelgg. FKB-BygnAnlegg beskriver bygningsmessige anlegg som ikke er knyttet til bygninger eller veger. Dette inkluderer objekter som murer, gjerder, taubaner, kaier, moloer, tanker etc.
  
 [discrete]
@@ -34,7 +34,7 @@
 |http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-BygnAnlegg/5.0
  
 |version
-|5.0.1
+|5.0.2
  
 |xmlns
 |app
@@ -249,9 +249,9 @@ SOSI_navn: INFORMASJON +
 [cols="20,80"]
 |===
 |Subtyper:
-|<<kaibrygge,«featureType» KaiBrygge>> +
+|<<fiktivavgrensningforanlegg,«featureType» FiktivAvgrensningForAnlegg>> +
+<<kaibrygge,«featureType» KaiBrygge>> +
 <<kvalitetpåkrevd,«FeatureType» KvalitetPåkrevd>> +
-<<fiktivavgrensningforanlegg,«featureType» FiktivAvgrensningForAnlegg>> +
 |Realisering av: 
 |/SOSI Model/SOSI Generell objektkatalog/FKB Generell del/FKB Generell del-5.0/Generelle elementer::«FeatureType» Fellesegenskaper +
 |Realisering av: 
@@ -294,41 +294,41 @@ SOSI_navn: KVALITET +
 |<<fellesegenskaper,«FeatureType» Fellesegenskaper>>
  
 |Subtyper:
-|<<kaibryggekant,«featureType» KaiBryggeKant>> +
-<<elveterskel,«featureType» Elveterskel>> +
-<<elveforbygning,«featureType» Elveforbygning>> +
+|<<pælebunt,«featureType» Pælebunt>> +
 <<tribune,«featureType» Tribune>> +
-<<murfrittstående,«featureType» MurFrittstående>> +
-<<skytebaneinnretning,«featureType» Skytebaneinnretning>> +
-<<svømmebasseng,«featureType» Svømmebasseng>> +
-<<fiskehjell,«featureType» Fiskehjell>> +
-<<ruin,«featureType» Ruin>> +
-<<portstolpe,«featureType» Portstolpe>> +
-<<idrettsanlegg,«featureType» Idrettsanlegg>> +
-<<pælebunt,«featureType» Pælebunt>> +
 <<flytebryggeutligger,«featureType» FlytebryggeUtligger>> +
-<<flytebrygge,«featureType» Flytebrygge>> +
-<<fisketrapp,«featureType» Fisketrapp>> +
-<<fundament,«featureType» Fundament>> +
-<<trapp,«featureType» Trapp>> +
-<<hoppbakke,«featureType» Hoppbakke>> +
-<<sluse,«featureType» Sluse>> +
-<<navigasjonsinstallasjon,«featureType» Navigasjonsinstallasjon>> +
-<<brudetalj,«featureType» Brudetalj>> +
-<<fiskehjellmøne,«featureType» FiskehjellMøne>> +
-<<parkdetalj,«featureType» Parkdetalj>> +
+<<elveforbygning,«featureType» Elveforbygning>> +
 <<brønn,«featureType» Brønn>> +
-<<beskrivendehjelpelinjeanlegg,«featureType» BeskrivendeHjelpelinjeAnlegg>> +
-<<molo,«featureType» Molo>> +
+<<murfrittstående,«featureType» MurFrittstående>> +
+<<fiskehjell,«featureType» Fiskehjell>> +
 <<avfallsbeholder,«featureType» Avfallsbeholder>> +
-<<oppdrettskar,«featureType» Oppdrettskar>> +
-<<demning,«featureType» Demning>> +
 <<slipp,«featureType» Slipp>> +
-<<rørgate,«featureType» Rørgate>> +
-<<oppdrettslokalitet,«featureType» Oppdrettslokalitet>> +
+<<kaibryggekant,«featureType» KaiBryggeKant>> +
+<<navigasjonsinstallasjon,«featureType» Navigasjonsinstallasjon>> +
+<<fiskehjellmøne,«featureType» FiskehjellMøne>> +
+<<elveterskel,«featureType» Elveterskel>> +
+<<molo,«featureType» Molo>> +
+<<skytebaneinnretning,«featureType» Skytebaneinnretning>> +
+<<fundament,«featureType» Fundament>> +
+<<svømmebasseng,«featureType» Svømmebasseng>> +
+<<portstolpe,«featureType» Portstolpe>> +
+<<ruin,«featureType» Ruin>> +
+<<demning,«featureType» Demning>> +
+<<brudetalj,«featureType» Brudetalj>> +
 <<flytebryggelandgang,«featureType» FlytebryggeLandgang>> +
-<<nrlobjekter,«FeatureType» NRLobjekter>> +
+<<oppdrettskar,«featureType» Oppdrettskar>> +
+<<fisketrapp,«featureType» Fisketrapp>> +
+<<beskrivendehjelpelinjeanlegg,«featureType» BeskrivendeHjelpelinjeAnlegg>> +
+<<oppdrettslokalitet,«featureType» Oppdrettslokalitet>> +
+<<flytebrygge,«featureType» Flytebrygge>> +
+<<hoppbakke,«featureType» Hoppbakke>> +
+<<trapp,«featureType» Trapp>> +
+<<parkdetalj,«featureType» Parkdetalj>> +
+<<idrettsanlegg,«featureType» Idrettsanlegg>> +
+<<rørgate,«featureType» Rørgate>> +
+<<sluse,«featureType» Sluse>> +
 <<nvdbobjekter,«FeatureType» NVDBobjekter>> +
+<<nrlobjekter,«FeatureType» NRLobjekter>> +
 |Realisering av: 
 |«ApplicationSchema» Generelle typer 5.1/SOSI_Fellesegenskaper og SOSI_Objekt::«FeatureType» SOSI_Objekt +
 |Realisering av: 
@@ -371,12 +371,12 @@ SOSI_navn: NRLPEKER +
 |<<kvalitetpåkrevd,«FeatureType» KvalitetPåkrevd>>
  
 |Subtyper:
-|<<taubane,«featureType» Taubane>> +
+|<<flaggstang,«featureType» Flaggstang>> +
 <<pipe,«featureType» Pipe>> +
-<<tårn,«featureType» Tårn>> +
-<<tank,«featureType» Tank>> +
 <<taubanemast,«FeatureType» Taubanemast>> +
-<<flaggstang,«featureType» Flaggstang>> +
+<<taubane,«featureType» Taubane>> +
+<<tank,«featureType» Tank>> +
+<<tårn,«featureType» Tårn>> +
 |===
  
 '''
@@ -415,15 +415,15 @@ SOSI_navn: NVDBPEKER +
 |<<kvalitetpåkrevd,«FeatureType» KvalitetPåkrevd>>
  
 |Subtyper:
-|<<kulvert,«featureType» Kulvert>> +
-<<skjerm,«featureType» Skjerm>> +
-<<skråforstøtningsmur,«featureType» SkråForstøtningsmur>> +
+|<<skråforstøtningsmur,«featureType» SkråForstøtningsmur>> +
 <<bru,«featureType» Bru>> +
-<<murloddrett,«featureType» MurLoddrett>> +
 <<stikkrenne,«featureType» Stikkrenne>> +
-<<voll,«featureType» Voll>> +
 <<gjerde,«featureType» Gjerde>> +
 <<tunnelportal,«featureType» Tunnelportal>> +
+<<kulvert,«featureType» Kulvert>> +
+<<voll,«featureType» Voll>> +
+<<murloddrett,«featureType» MurLoddrett>> +
+<<skjerm,«featureType» Skjerm>> +
 |===
  
 '''
@@ -2837,6 +2837,7 @@ SOSI_navn: EKSTERNPEKER +
 |<<medium,«CodeList» Medium>>
 |Profilparametre i tagged values: 
 |
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/medium + 
 SOSI_datatype: T + 
 SOSI_lengde: 1 + 
 SOSI_navn: MEDIUM + 
@@ -3672,20 +3673,6 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-BygnAnlegg/5.0/fi
 [cols="20,80"]
 |===
 |*Rollenavn:* 
-|*tilhørendeLandgang*
- 
-|Definisjon:
-|viser hvilke landganger som tilhører hvilke flytebrygger
- 
-|Multiplisitet: 
-|[0..*]
- 
-|Til klasse
-|<<flytebryggelandgang,«featureType» FlytebryggeLandgang>>
-|===
-[cols="20,80"]
-|===
-|*Rollenavn:* 
 |*tilhørendeUtligger*
  
 |Definisjon:
@@ -3696,6 +3683,20 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-BygnAnlegg/5.0/fi
  
 |Til klasse
 |<<flytebryggeutligger,«featureType» FlytebryggeUtligger>>
+|===
+[cols="20,80"]
+|===
+|*Rollenavn:* 
+|*tilhørendeLandgang*
+ 
+|Definisjon:
+|viser hvilke landganger som tilhører hvilke flytebrygger
+ 
+|Multiplisitet: 
+|[0..*]
+ 
+|Til klasse
+|<<flytebryggelandgang,«featureType» FlytebryggeLandgang>>
 |===
  
 [discrete]
@@ -4313,6 +4314,7 @@ SOSI_navn: Kurve +
 |<<høydereferanse,«CodeList» Høydereferanse>>
 |Profilparametre i tagged values: 
 |
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/hoydereferanse + 
 SOSI_datatype: T + 
 SOSI_lengde: 6 + 
 SOSI_navn: HREF + 

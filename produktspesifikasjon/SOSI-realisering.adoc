@@ -4092,13 +4092,13 @@
 |.FLATE
 |[1..1]
  
-|tilhørendeLandgang
-|«featureType» FlytebryggeLandgang
-|..TILHØRENDELANGANG
-|[0..*]
 |tilhørendeUtligger
 |«featureType» FlytebryggeUtligger
 |..TILHØRENDEUTLIGGER
+|[0..*]
+|tilhørendeLandgang
+|«featureType» FlytebryggeLandgang
+|..TILHØRENDELANDGANG
 |[0..*]
 |===
  
