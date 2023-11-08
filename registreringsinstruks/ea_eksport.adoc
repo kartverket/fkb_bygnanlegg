@@ -2865,16 +2865,16 @@ Hvis ruinen har brede murer kan det ogs&#229; registreres indre avgrensning av m
 |Topp ytterkant ruin (HREF TOP)
  
 |FKB-A
-|Opsjonell registrering
+|Påkrevd registrering
  
 |FKB-B
-|Opsjonell registrering
+|Påkrevd registrering
  
 |FKB-C
-|Opsjonell registrering
+|Påkrevd registrering
  
 |FKB-D
-|Opsjonell registrering
+|Påkrevd registrering
  
 |===
  
