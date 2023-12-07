@@ -3,7 +3,7 @@
 // Høringsversjon
 ifeval::[{dokumentstatus} == 2]
 
-WARNING: Denne er en høringsversjon av produktspesifikasjonen!
+WARNING: Dette er en høringsversjon av produktspesifikasjonen!
 
 endif::[]
 
@@ -17,7 +17,7 @@ endif::[]
 // Arbeidsversjon
 ifeval::[{dokumentstatus} == 4]
 
-WARNING: Denne er en arbeidsversjon av dokumentet!
+WARNING: Dette er en arbeidsversjon av dokumentet!
 
 endif::[]
 
