@@ -86,11 +86,13 @@ Endringsloggene for det enkelte datasett har som ambisjonsnivå å beskrive de v
 * Egenskapene medium og høydereferanse endret fra opsjonell til påkrevd på en rekke objekttyper. Disse egenskapene er nå alltid angitt som påkrevde der de benyttes (kodes med ukjent-verdi og nødvendig).
 
 
+=== Normative referanser
+
+include::../felles_prodspek/kap14_normativ_ref.adoc[]
+
 <<<
 
 == Definisjoner og forkortelser
-
-Definisjoner og forkortelser er felles for alle FKB produktspesifikasjoner. Se også {fkbGenerellDel-url}/#truenormative-referanser[normative referanser for FKB generell del]. 
 
 === Definisjoner
 
