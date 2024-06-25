@@ -8296,13 +8296,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <div class="paragraph">
 <p>SOSI-realiseringen følger kravene i "Realisering i SOSI-format 5.0" <a href="#SOSI-FORMAT">[SOSI-FORMAT]</a>. Under en utlisting av SOSI-formatrealiseringen:</p>
 </div>
-<h5 id="_bruerogtunellerfeaturetype_bru" class="discrete">BruerOgTuneller::«featureType» Bru</h5>
+<h5 id="_objekttype_bru" class="discrete">Objekttype: Bru</h5>
+<h6 id="_geometrityper" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>FLATE</p>
+</div>
+<h6 id="_attributter" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -8431,13 +8436,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..NVDBPEKER</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">bruOverBru</p></td>
@@ -8467,22 +8465,43 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">..FRISEILINGSHØYDE</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">D10</p></td>
 </tr>
+</tbody>
+</table>
+<h6 id="_roller_6" class="discrete">Roller</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 31.25%;">
+<col style="width: 31.25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rolle: </strong>tilhørendeDetalj</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rollenavn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Objekttype</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tilhørendeDetalj</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«featureType» Brudetalj</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..*]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..TILHØRENDEDETALJ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">REF</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_bruerogtunellerfeaturetype_brudetalj" class="discrete">BruerOgTuneller::«featureType» Brudetalj</h5>
+<h5 id="_objekttype_brudetalj" class="discrete">Objekttype: Brudetalj</h5>
+<h6 id="_geometrityper_2" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_2" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -8605,167 +8624,20 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
 </tbody>
 </table>
-<h5 id="_bruerogtunellerfeaturetype_kulvert" class="discrete">BruerOgTuneller::«featureType» Kulvert</h5>
+<h5 id="_objekttype_kulvert" class="discrete">Objekttype: Kulvert</h5>
+<h6 id="_geometrityper_3" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_3" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Posisjonskvalitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..KVALITET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NØYAKTIGHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.synbarhet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Synbarhet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;SYNBARHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetodeHøyde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODEHØYDE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighetHøyde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">nvdbpeker</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..NVDBPEKER</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_bruerogtunellerfeaturetype_stikkrenne" class="discrete">BruerOgTuneller::«featureType» Stikkrenne</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -8895,22 +8767,20 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">..NVDBPEKER</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
 </tbody>
 </table>
-<h5 id="_bruerogtunellerfeaturetype_tunnelportal" class="discrete">BruerOgTuneller::«featureType» Tunnelportal</h5>
+<h5 id="_objekttype_stikkrenne" class="discrete">Objekttype: Stikkrenne</h5>
+<h6 id="_geometrityper_4" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_4" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -9040,22 +8910,20 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">..NVDBPEKER</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
 </tbody>
 </table>
-<h5 id="_bygningsmessigeanleggfeaturetype_avfallsbeholder" class="discrete">BygningsmessigeAnlegg::«featureType» Avfallsbeholder</h5>
+<h5 id="_objekttype_tunnelportal" class="discrete">Objekttype: Tunnelportal</h5>
+<h6 id="_geometrityper_5" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_5" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -9179,18 +9047,147 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">posisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Point</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nvdbpeker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.PUNKT</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..NVDBPEKER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_objekttype_avfallsbeholder" class="discrete">Objekttype: Avfallsbeholder</h5>
+<h6 id="_geometrityper_6" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>PUNKT, FLATE</p>
+</div>
+<h6 id="_attributter_6" class="discrete">Attributter</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
+<col style="width: 12.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Posisjonskvalitet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..KVALITET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NØYAKTIGHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.synbarhet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Synbarhet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;SYNBARHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetodeHøyde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODEHØYDE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighetHøyde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">medium</p></td>
@@ -9215,13 +9212,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_bygningsmessigeanleggfeaturetype_brønn" class="discrete">BygningsmessigeAnlegg::«featureType» Brønn</h5>
+<h5 id="_objekttype_brønn" class="discrete">Objekttype: Brønn</h5>
+<h6 id="_geometrityper_7" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>FLATE, PUNKT</p>
+</div>
+<h6 id="_attributter_7" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -9345,20 +9347,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">posisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Point</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.PUNKT</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Høydereferanse</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
@@ -9367,13 +9355,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_bygningsmessigeanleggfeaturetype_flaggstang" class="discrete">BygningsmessigeAnlegg::«featureType» Flaggstang</h5>
+<h5 id="_objekttype_flaggstang" class="discrete">Objekttype: Flaggstang</h5>
+<h6 id="_geometrityper_8" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>PUNKT</p>
+</div>
+<h6 id="_attributter_8" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -9502,13 +9495,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..NRLPEKER</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">posisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Point</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.PUNKT</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
@@ -9526,13 +9512,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_bygningsmessigeanleggfeaturetype_fundament" class="discrete">BygningsmessigeAnlegg::«featureType» Fundament</h5>
+<h5 id="_objekttype_fundament" class="discrete">Objekttype: Fundament</h5>
+<h6 id="_geometrityper_9" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>FLATE</p>
+</div>
+<h6 id="_attributter_9" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -9656,13 +9647,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">medium</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Medium</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
@@ -9671,13 +9655,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_bygningsmessigeanleggfeaturetype_pipe" class="discrete">BygningsmessigeAnlegg::«featureType» Pipe</h5>
+<h5 id="_objekttype_pipe" class="discrete">Objekttype: Pipe</h5>
+<h6 id="_geometrityper_10" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>PUNKT, FLATE</p>
+</div>
+<h6 id="_attributter_10" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -9806,20 +9795,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..NRLPEKER</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">posisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Point</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.PUNKT</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
@@ -9830,13 +9805,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_bygningsmessigeanleggfeaturetype_tank" class="discrete">BygningsmessigeAnlegg::«featureType» Tank</h5>
+<h5 id="_objekttype_tank" class="discrete">Objekttype: Tank</h5>
+<h6 id="_geometrityper_11" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>PUNKT, FLATE</p>
+</div>
+<h6 id="_attributter_11" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -9967,20 +9947,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">posisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Point</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.PUNKT</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">medium</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Medium</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
@@ -9989,13 +9955,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_bygningsmessigeanleggfeaturetype_trapp" class="discrete">BygningsmessigeAnlegg::«featureType» Trapp</h5>
+<h5 id="_objekttype_trapp" class="discrete">Objekttype: Trapp</h5>
+<h6 id="_geometrityper_12" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>FLATE</p>
+</div>
+<h6 id="_attributter_12" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -10119,13 +10090,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">medium</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Medium</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
@@ -10134,13 +10098,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_bygningsmessigeanleggfeaturetype_tårn" class="discrete">BygningsmessigeAnlegg::«featureType» Tårn</h5>
+<h5 id="_objekttype_tårn" class="discrete">Objekttype: Tårn</h5>
+<h6 id="_geometrityper_13" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>PUNKT, FLATE</p>
+</div>
+<h6 id="_attributter_13" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -10271,20 +10240,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">posisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Point</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.PUNKT</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">medium</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Medium</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
@@ -10293,13 +10248,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_mureroggjerderfeaturetype_gjerde" class="discrete">MurerOgGjerder::«featureType» Gjerde</h5>
+<h5 id="_objekttype_gjerde" class="discrete">Objekttype: Gjerde</h5>
+<h6 id="_geometrityper_14" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_14" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -10428,13 +10388,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..NVDBPEKER</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">gjerdetype</p></td>
@@ -10459,13 +10412,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_mureroggjerderfeaturetype_murfrittstående" class="discrete">MurerOgGjerder::«featureType» MurFrittstående</h5>
+<h5 id="_objekttype_murfrittstående" class="discrete">Objekttype: MurFrittstående</h5>
+<h6 id="_geometrityper_15" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_15" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -10589,13 +10547,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grense</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Høydereferanse</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
@@ -10611,13 +10562,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_mureroggjerderfeaturetype_murloddrett" class="discrete">MurerOgGjerder::«featureType» MurLoddrett</h5>
+<h5 id="_objekttype_murloddrett" class="discrete">Objekttype: MurLoddrett</h5>
+<h6 id="_geometrityper_16" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_16" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -10748,13 +10704,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grense</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Høydereferanse</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
@@ -10770,13 +10719,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_mureroggjerderfeaturetype_portstolpe" class="discrete">MurerOgGjerder::«featureType» Portstolpe</h5>
+<h5 id="_objekttype_portstolpe" class="discrete">Objekttype: Portstolpe</h5>
+<h6 id="_geometrityper_17" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>PUNKT</p>
+</div>
+<h6 id="_attributter_17" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -10898,13 +10852,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">posisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Point</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.PUNKT</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
@@ -10915,13 +10862,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_mureroggjerderfeaturetype_ruin" class="discrete">MurerOgGjerder::«featureType» Ruin</h5>
+<h5 id="_objekttype_ruin" class="discrete">Objekttype: Ruin</h5>
+<h6 id="_geometrityper_18" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_18" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -11043,13 +10995,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grense</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
@@ -11074,13 +11019,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_mureroggjerderfeaturetype_skjerm" class="discrete">MurerOgGjerder::«featureType» Skjerm</h5>
+<h5 id="_objekttype_skjerm" class="discrete">Objekttype: Skjerm</h5>
+<h6 id="_geometrityper_19" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_19" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -11209,13 +11159,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..NVDBPEKER</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skjermingsfunksjon</p></td>
@@ -11247,13 +11190,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_mureroggjerderfeaturetype_skråforstøtningsmur" class="discrete">MurerOgGjerder::«featureType» SkråForstøtningsmur</h5>
+<h5 id="_objekttype_skråforstøtningsmur" class="discrete">Objekttype: SkråForstøtningsmur</h5>
+<h6 id="_geometrityper_20" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>FLATE</p>
+</div>
+<h6 id="_attributter_20" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -11382,13 +11330,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..NVDBPEKER</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">medium</p></td>
@@ -11399,13 +11340,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_mureroggjerderfeaturetype_voll" class="discrete">MurerOgGjerder::«featureType» Voll</h5>
+<h5 id="_objekttype_voll" class="discrete">Objekttype: Voll</h5>
+<h6 id="_geometrityper_21" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_21" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -11534,13 +11480,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..NVDBPEKER</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skjermingsfunksjon</p></td>
@@ -11565,13 +11504,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggkulturlekfeaturetype_hoppbakke" class="discrete">TekniskeAnleggKulturLek::«featureType» Hoppbakke</h5>
+<h5 id="_objekttype_hoppbakke" class="discrete">Objekttype: Hoppbakke</h5>
+<h6 id="_geometrityper_22" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_22" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -11693,13 +11637,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
@@ -11710,13 +11647,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggkulturlekfeaturetype_idrettsanlegg" class="discrete">TekniskeAnleggKulturLek::«featureType» Idrettsanlegg</h5>
+<h5 id="_objekttype_idrettsanlegg" class="discrete">Objekttype: Idrettsanlegg</h5>
+<h6 id="_geometrityper_23" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_23" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -11838,13 +11780,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grense</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
@@ -11855,13 +11790,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggkulturlekfeaturetype_parkdetalj" class="discrete">TekniskeAnleggKulturLek::«featureType» Parkdetalj</h5>
+<h5 id="_objekttype_parkdetalj" class="discrete">Objekttype: Parkdetalj</h5>
+<h6 id="_geometrityper_24" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>PUNKT, FLATE</p>
+</div>
+<h6 id="_attributter_24" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -11983,20 +11923,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">posisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Point</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.PUNKT</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
@@ -12028,13 +11954,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggkulturlekfeaturetype_skytebaneinnretning" class="discrete">TekniskeAnleggKulturLek::«featureType» Skytebaneinnretning</h5>
+<h5 id="_objekttype_skytebaneinnretning" class="discrete">Objekttype: Skytebaneinnretning</h5>
+<h6 id="_geometrityper_25" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_25" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -12156,13 +12087,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
@@ -12173,13 +12097,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggkulturlekfeaturetype_svømmebasseng" class="discrete">TekniskeAnleggKulturLek::«featureType» Svømmebasseng</h5>
+<h5 id="_objekttype_svømmebasseng" class="discrete">Objekttype: Svømmebasseng</h5>
+<h6 id="_geometrityper_26" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>FLATE</p>
+</div>
+<h6 id="_attributter_26" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -12303,13 +12232,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">medium</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Medium</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
@@ -12318,13 +12240,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggkulturlekfeaturetype_taubane" class="discrete">TekniskeAnleggKulturLek::«featureType» Taubane</h5>
+<h5 id="_objekttype_taubane" class="discrete">Objekttype: Taubane</h5>
+<h6 id="_geometrityper_27" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_27" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -12453,13 +12380,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..NRLPEKER</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">taubanetype</p></td>
@@ -12482,22 +12402,43 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">..EKSTERNPEKER</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
 </tr>
+</tbody>
+</table>
+<h6 id="_roller_7" class="discrete">Roller</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 31.25%;">
+<col style="width: 31.25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rolle: </strong>tilhørendeMast</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rollenavn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Objekttype</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tilhørendeMast</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«FeatureType» Taubanemast</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..*]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..TILHØRENDEMAST</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">REF</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggkulturlekfeaturetype_taubanemast" class="discrete">TekniskeAnleggKulturLek::«FeatureType» Taubanemast</h5>
+<h5 id="_objekttype_taubanemast" class="discrete">Objekttype: Taubanemast</h5>
+<h6 id="_geometrityper_28" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>PUNKT</p>
+</div>
+<h6 id="_attributter_28" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -12628,13 +12569,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">posisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Point</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.PUNKT</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Høydereferanse</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
@@ -12650,13 +12584,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggkulturlekfeaturetype_tribune" class="discrete">TekniskeAnleggKulturLek::«featureType» Tribune</h5>
+<h5 id="_objekttype_tribune" class="discrete">Objekttype: Tribune</h5>
+<h6 id="_geometrityper_29" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>FLATE</p>
+</div>
+<h6 id="_attributter_29" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -12778,23 +12717,21 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_beskrivendehjelpelinjeanlegg" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» BeskrivendeHjelpelinjeAnlegg</h5>
+<h5 id="_objekttype_beskrivendehjelpelinjeanlegg" class="discrete">Objekttype: BeskrivendeHjelpelinjeAnlegg</h5>
+<h6 id="_geometrityper_30" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_30" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -12916,13 +12853,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
@@ -12940,526 +12870,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_demning" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» Demning</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Posisjonskvalitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..KVALITET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NØYAKTIGHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.synbarhet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Synbarhet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;SYNBARHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetodeHøyde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODEHØYDE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighetHøyde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_elveforbygning" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» Elveforbygning</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Posisjonskvalitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..KVALITET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NØYAKTIGHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.synbarhet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Synbarhet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;SYNBARHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetodeHøyde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODEHØYDE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighetHøyde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_elveterskel" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» Elveterskel</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Posisjonskvalitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..KVALITET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NØYAKTIGHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.synbarhet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Synbarhet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;SYNBARHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetodeHøyde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODEHØYDE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighetHøyde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_fiktivavgrensningforanlegg" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» FiktivAvgrensningForAnlegg</h5>
+<h5 id="_objekttype_demning" class="discrete">Objekttype: Demning</h5>
+<h6 id="_geometrityper_31" class="discrete">Geometrityper</h6>
 <div class="paragraph">
-<p><strong>Avgrenser: </strong>KaiBrygge</p>
+<p>FLATE</p>
 </div>
+<h6 id="_attributter_31" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grense</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_fiskehjell" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» Fiskehjell</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -13582,29 +13004,549 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
 </tr>
+</tbody>
+</table>
+<h5 id="_objekttype_elveforbygning" class="discrete">Objekttype: Elveforbygning</h5>
+<h6 id="_geometrityper_32" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>FLATE</p>
+</div>
+<h6 id="_attributter_32" class="discrete">Attributter</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
+<col style="width: 12.5%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rolle: </strong>tilhørendeMøne</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Posisjonskvalitet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..KVALITET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NØYAKTIGHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.synbarhet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Synbarhet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;SYNBARHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetodeHøyde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODEHØYDE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighetHøyde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_objekttype_elveterskel" class="discrete">Objekttype: Elveterskel</h5>
+<h6 id="_geometrityper_33" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>FLATE</p>
+</div>
+<h6 id="_attributter_33" class="discrete">Attributter</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
+<col style="width: 12.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Posisjonskvalitet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..KVALITET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NØYAKTIGHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.synbarhet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Synbarhet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;SYNBARHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetodeHøyde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODEHØYDE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighetHøyde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_objekttype_fiktivavgrensningforanlegg" class="discrete">Objekttype: FiktivAvgrensningForAnlegg</h5>
+<h6 id="_geometrityper_34" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_avgrenser" class="discrete">Avgrenser</h6>
+<div class="paragraph">
+<p>KaiBrygge</p>
+</div>
+<h6 id="_attributter_34" class="discrete">Attributter</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
+<col style="width: 12.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_objekttype_fiskehjell" class="discrete">Objekttype: Fiskehjell</h5>
+<h6 id="_geometrityper_35" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>FLATE</p>
+</div>
+<h6 id="_attributter_35" class="discrete">Attributter</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
+<col style="width: 12.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Posisjonskvalitet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..KVALITET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NØYAKTIGHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.synbarhet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Synbarhet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;SYNBARHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetodeHøyde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODEHØYDE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighetHøyde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_roller_8" class="discrete">Roller</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 31.25%;">
+<col style="width: 31.25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rollenavn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Objekttype</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tilhørendeMøne</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«featureType» FiskehjellMøne</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..*]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..TILHØRENDEMØNE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">REF</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_fiskehjellmøne" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» FiskehjellMøne</h5>
+<h5 id="_objekttype_fiskehjellmøne" class="discrete">Objekttype: FiskehjellMøne</h5>
+<h6 id="_geometrityper_36" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_36" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -13727,22 +13669,20 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_fisketrapp" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» Fisketrapp</h5>
+<h5 id="_objekttype_fisketrapp" class="discrete">Objekttype: Fisketrapp</h5>
+<h6 id="_geometrityper_37" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_37" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -13865,22 +13805,20 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_flytebrygge" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» Flytebrygge</h5>
+<h5 id="_objekttype_flytebrygge" class="discrete">Objekttype: Flytebrygge</h5>
+<h6 id="_geometrityper_38" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>FLATE</p>
+</div>
+<h6 id="_attributter_38" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -14003,315 +13941,49 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
 </tr>
+</tbody>
+</table>
+<h6 id="_roller_9" class="discrete">Roller</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 31.25%;">
+<col style="width: 31.25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rollenavn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Objekttype</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rolle: </strong>tilhørendeUtligger</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tilhørendeUtligger</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«featureType» FlytebryggeUtligger</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..*]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..TILHØRENDEUTLIGGER</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">REF</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rolle: </strong>tilhørendeLandgang</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tilhørendeLandgang</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«featureType» FlytebryggeLandgang</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..*]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..TILHØRENDELANDGANG</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">REF</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_flytebryggelandgang" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» FlytebryggeLandgang</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Posisjonskvalitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..KVALITET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NØYAKTIGHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.synbarhet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Synbarhet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;SYNBARHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetodeHøyde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODEHØYDE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighetHøyde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grense</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_flytebryggeutligger" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» FlytebryggeUtligger</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Posisjonskvalitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..KVALITET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NØYAKTIGHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.synbarhet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Synbarhet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;SYNBARHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetodeHøyde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODEHØYDE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighetHøyde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_kaibrygge" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» KaiBrygge</h5>
+<h5 id="_objekttype_flytebryggelandgang" class="discrete">Objekttype: FlytebryggeLandgang</h5>
+<h6 id="_geometrityper_39" class="discrete">Geometrityper</h6>
 <div class="paragraph">
-<p><strong>Avgrenses av: </strong>KaiBryggeKant, FiktivAvgrensningForAnlegg</p>
+<p>KURVE</p>
 </div>
+<h6 id="_attributter_39" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -14393,11 +14065,280 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Posisjonskvalitet</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..KVALITET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NØYAKTIGHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.synbarhet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Synbarhet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;SYNBARHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetodeHøyde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODEHØYDE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighetHøyde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_objekttype_flytebryggeutligger" class="discrete">Objekttype: FlytebryggeUtligger</h5>
+<h6 id="_geometrityper_40" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_40" class="discrete">Attributter</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
+<col style="width: 12.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Posisjonskvalitet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..KVALITET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NØYAKTIGHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.synbarhet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Synbarhet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;SYNBARHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetodeHøyde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODEHØYDE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighetHøyde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_objekttype_kaibrygge" class="discrete">Objekttype: KaiBrygge</h5>
+<h6 id="_geometrityper_41" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>FLATE</p>
+</div>
+<h6 id="_avgrenses_av" class="discrete">Avgrenses av</h6>
+<div class="paragraph">
+<p>KaiBryggeKant, FiktivAvgrensningForAnlegg</p>
+</div>
+<h6 id="_attributter_41" class="discrete">Attributter</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
+<col style="width: 12.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">havnedatapeker</p></td>
@@ -14408,16 +14349,22 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_kaibryggekant" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» KaiBryggeKant</h5>
+<h5 id="_objekttype_kaibryggekant" class="discrete">Objekttype: KaiBryggeKant</h5>
+<h6 id="_geometrityper_42" class="discrete">Geometrityper</h6>
 <div class="paragraph">
-<p><strong>Avgrenser: </strong>KaiBrygge</p>
+<p>KURVE</p>
 </div>
+<h6 id="_avgrenser_2" class="discrete">Avgrenser</h6>
+<div class="paragraph">
+<p>KaiBrygge</p>
+</div>
+<h6 id="_attributter_42" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -14539,23 +14486,21 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grense</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_molo" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» Molo</h5>
+<h5 id="_objekttype_molo" class="discrete">Objekttype: Molo</h5>
+<h6 id="_geometrityper_43" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>FLATE</p>
+</div>
+<h6 id="_attributter_43" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -14677,13 +14622,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">medium</p></td>
@@ -14694,13 +14632,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_navigasjonsinstallasjon" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» Navigasjonsinstallasjon</h5>
+<h5 id="_objekttype_navigasjonsinstallasjon" class="discrete">Objekttype: Navigasjonsinstallasjon</h5>
+<h6 id="_geometrityper_44" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>PUNKT</p>
+</div>
+<h6 id="_attributter_44" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -14822,23 +14765,21 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">posisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Point</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.PUNKT</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_oppdrettskar" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» Oppdrettskar</h5>
+<h5 id="_objekttype_oppdrettskar" class="discrete">Objekttype: Oppdrettskar</h5>
+<h6 id="_geometrityper_45" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_45" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -14960,13 +14901,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grense</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
@@ -14977,13 +14911,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_oppdrettslokalitet" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» Oppdrettslokalitet</h5>
+<h5 id="_objekttype_oppdrettslokalitet" class="discrete">Objekttype: Oppdrettslokalitet</h5>
+<h6 id="_geometrityper_46" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>FLATE</p>
+</div>
+<h6 id="_attributter_46" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -15105,13 +15044,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">eksternpeker</p></td>
@@ -15122,13 +15054,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_pælebunt" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» Pælebunt</h5>
+<h5 id="_objekttype_pælebunt" class="discrete">Objekttype: Pælebunt</h5>
+<h6 id="_geometrityper_47" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>PUNKT</p>
+</div>
+<h6 id="_attributter_47" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -15250,13 +15187,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">posisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Point</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.PUNKT</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
@@ -15267,13 +15197,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_rørgate" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» Rørgate</h5>
+<h5 id="_objekttype_rørgate" class="discrete">Objekttype: Rørgate</h5>
+<h6 id="_geometrityper_48" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_48" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -15395,13 +15330,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
@@ -15419,13 +15347,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_slipp" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» Slipp</h5>
+<h5 id="_objekttype_slipp" class="discrete">Objekttype: Slipp</h5>
+<h6 id="_geometrityper_49" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_49" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -15547,13 +15480,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grense</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">høydereferanse</p></td>
@@ -15564,13 +15490,18 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 </tr>
 </tbody>
 </table>
-<h5 id="_tekniskeanleggvannvassdragkystfeaturetype_sluse" class="discrete">TekniskeAnleggVannVassdragKyst::«featureType» Sluse</h5>
+<h5 id="_objekttype_sluse" class="discrete">Objekttype: Sluse</h5>
+<h6 id="_geometrityper_50" class="discrete">Geometrityper</h6>
+<div class="paragraph">
+<p>KURVE</p>
+</div>
+<h6 id="_attributter_50" class="discrete">Attributter</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 25%;">
+<col style="width: 6.25%;">
+<col style="width: 31.25%;">
 <col style="width: 12.5%;">
 </colgroup>
 <tbody>
@@ -15692,13 +15623,6 @@ Merknad: KaiBrygge kan være bygget over vann slik at vannkonturen registeres un
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;H-NØYAKTIGHET</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grense</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">sluseType</p></td>
