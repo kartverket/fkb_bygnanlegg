@@ -53,7 +53,7 @@ Endringsloggene for det enkelte datasett har som ambisjonsnivå å beskrive de v
 ==== Endringer fra FKB-ByngAnlegg 5.0.2 til FKB-BygnAnlegg 5.1
 
 * Lagt til taggen inlineOrByReference=byReference på alle assosiasjoner (gir nytt GML-Schema som sikrer at assosierte objekter utveksles som referanser i GML). 
-* Justert på dokumentasjonsmal, bl.a. med bedre visning av SOSI-format realisering
+* Justeringer/forbedringer i dokumentasjonsmal. Dokumentasjon kun tilgjengelig på HTML-format.
 
 ==== Endringer fra FKB-BygnAnlegg 5.0.1 til FKB-BygnAnlegg 5.0.2
 
