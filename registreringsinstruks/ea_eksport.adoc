@@ -2150,7 +2150,7 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-BygnAnlegg/5.0/fi
  
 [discrete]
 ==== Tilleggsinformasjon for fotogrammetrisk registrering
-Gjerder i forbindelse med anleggsomr&#229;der skal ikke registreres.
+Gjerder i forbindelse med anleggsomr&#229;der og str&#248;mgjerder skal ikke registreres.
 
 Fortrinnsvis skal topp gjerde registreres, men der dette er vanskelig kan h&#248;yde for gjerdet registreres ved terrengniv&#229; (HREF FOT). 
  
